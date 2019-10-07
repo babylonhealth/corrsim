@@ -15,16 +15,23 @@
 
 from .baseline import *
 from .correlation import *
+from .cka import *
 
 NAME_TO_SIM = {
+    # CorrSim
     'avg_cosine': avg_cosine,
-
     'pearson': pearson,
     'spearman': spearman,
     'kendall': kendall,
+    'max_spearman': max_spearman,
 
     'apsyn': apsyn,
-    'apsynp': apsynp
+    'apsynp': apsynp,
+
+    # CorrSet
+    'cka_linear': cka_factory(linear_kernel),
+    'cka_gaussian': cka_factory(gaussian_kernel),
+    'cka_dcorr': dcorr
 }
 
 
