@@ -1,4 +1,4 @@
-# Copyright 2018 Babylon Partners Limited. All Rights Reserved.
+# Copyright 2019 Babylon Partners Limited. All Rights Reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -82,3 +82,16 @@ def apsyn(x, y):
 
 def apsynp(x, y):
     return _apsynp(x, y, 0.1)
+
+
+def max_spearman(x, y):
+    """
+    Spearman correlation coefficient between two sentences
+    represented as max-pooled word vectors
+    :param x: list of word embeddings for the first sentence
+    :param y: list of word embeddings for the second sentence
+    :return: similarity measure between the two sentences
+    """
+    x_max = np.max(x, axis=0)
+    y_max = np.max(y, axis=0)
+    return spearmanr(x_max, y_max)[0]

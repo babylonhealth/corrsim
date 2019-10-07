@@ -1,8 +1,12 @@
 # CorrSim
 
-CorrSim is an evaluation framework and a collection of statistical similarity measures for word vectors described in
+**CorrSim** is an evaluation framework and a collection of statistical similarity measures for word vectors described in
 
 Vitalii Zhelezniak, Aleksandar Savkov, April Shen, and Nils Y. Hammerla. *Correlation Coefficients and Semantic Textual Similarity, NAACL-HLT 2019.*
+
+**CorrSet** is a a collection of multivariate statistical similarity measures for word vectors described in
+
+Vitalii Zhelezniak, April Shen, Daniel Busbridge, Aleksandar Savkov, and Nils Y. Hammerla. *Correlations between Word Vector Sets, EMNLP-IJCNLP 2019.*
 
 
 ## Dependencies
@@ -45,12 +49,17 @@ All the experiments are located in `evaluation`. They include
 1. `conf_intervals.py` - evaluates rank correlation similarities against cosine similarity on STS and computes 95% BCa confidence intervals for the delta in performance.
 2. `corrsim_eval.py` - evaluates rank correlation similarities against cosine similarity on STS and computes fractions of non-normal word and sentence embeddings.
 3. `wordsim_eval.py` - evaluates rank correlation similarities against cosine similarity and Pearson correlation on word-level tasks.
+3. `corrset_eval.py` - evaluates multivariate correlations on STS (EMNLP-IJCNLP 2019).
 
 ## Feedback and Contact:
 
 If this code is useful to your research, please consider citing
 
 Vitalii Zhelezniak, Aleksandar Savkov, April Shen, and Nils Y. Hammerla. *Correlation Coefficients and Semantic Textual Similarity, NAACL-HLT 2019.*
+
+and/or
+
+Vitalii Zhelezniak, April Shen, Daniel Busbridge, Aleksandar Savkov, and Nils Y. Hammerla. *Correlations between Word Vector Sets, EMNLP-IJCNLP 2019.*
 
 
 Contact: Vitalii Zhelezniak <vitali.zhelezniak@babylonhealth.com>
