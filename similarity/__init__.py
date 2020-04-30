@@ -16,6 +16,7 @@
 from .baseline import *
 from .correlation import *
 from .cka import *
+from .mi import *
 
 NAME_TO_SIM = {
     # CorrSim
@@ -31,7 +32,13 @@ NAME_TO_SIM = {
     # CorrSet
     'cka_linear': cka_factory(linear_kernel),
     'cka_gaussian': cka_factory(gaussian_kernel),
-    'cka_dcorr': dcorr
+    'cka_dcorr': dcorr,
+
+    # InfoSim
+    'ksg3': ksg3,
+    'ksg10': ksg10,
+    'mean_ksg10': mean_ksg10,
+    'max_ksg10': max_ksg10
 }
 
 

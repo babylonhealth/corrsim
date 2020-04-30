@@ -8,6 +8,9 @@ Vitalii Zhelezniak, Aleksandar Savkov, April Shen, and Nils Y. Hammerla. *Correl
 
 Vitalii Zhelezniak, April Shen, Daniel Busbridge, Aleksandar Savkov, and Nils Y. Hammerla. *Correlations between Word Vector Sets, EMNLP-IJCNLP 2019.*
 
+**InfoSim** is a collection of mutual information similarity measures for word vectors described in
+
+Vitalii Zhelezniak, Aleksandar Savkov, and Nils Y. Hammerla. *Estimating Mutual Information Between Dense Word Embeddings, ACL 2020.*
 
 ## Dependencies
 
@@ -50,6 +53,7 @@ All the experiments are located in `evaluation`. They include
 2. `corrsim_eval.py` - evaluates rank correlation similarities against cosine similarity on STS and computes fractions of non-normal word and sentence embeddings.
 3. `wordsim_eval.py` - evaluates rank correlation similarities against cosine similarity and Pearson correlation on word-level tasks.
 3. `corrset_eval.py` - evaluates multivariate correlations on STS (EMNLP-IJCNLP 2019).
+4. `infosim_eval.py` - evaluates the KSG estimator of mutual information on STS (ACL 2020).
 
 ## Feedback and Contact:
 
@@ -61,6 +65,9 @@ and/or
 
 Vitalii Zhelezniak, April Shen, Daniel Busbridge, Aleksandar Savkov, and Nils Y. Hammerla. *Correlations between Word Vector Sets, EMNLP-IJCNLP 2019.*
 
+and/or
+
+Vitalii Zhelezniak, Aleksandar Savkov, and Nils Y. Hammerla. *Estimating Mutual Information Between Dense Word Embeddings, ACL 2020.*
 
 Contact: Vitalii Zhelezniak <vitali.zhelezniak@babylonhealth.com>
 
