@@ -1,3 +1,6 @@
+> **Note**
+> This repository is no longer actively maintained by Babylon Health. For further assistance, reach out to the paper authors.
+
 # CorrSim
 
 **CorrSim** is an evaluation framework and a collection of statistical similarity measures for word vectors described in
